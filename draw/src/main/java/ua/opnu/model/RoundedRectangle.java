@@ -12,9 +12,6 @@ public class RoundedRectangle extends DrawShape {
         super(startPoint, endPoint);
     }
 
-    // Для відтворення округленого прямокутника ми використовуємо клас RoundRectangle2D.Double
-    // (Клас Double всередині класу RoundRectangle2D).
-    // Клас RoundRectangle2D.Double приймає координати типу Double.
     @Override
     public Shape getShape(Point startPoint, Point endPoint) {
         return new RoundRectangle2D.Double(Math.min(startPoint.getX(), endPoint.getX()), Math.min(startPoint.getY(), endPoint.getY()),
